@@ -1,0 +1,45 @@
+* Lecture 1: Motivation and highlevel introduction
+  - why Rust?
+  - ownership, borrowing, mutability
+  - learning curve
+  - basics for doing practice session 1
+    + let
+    + everything is an expression
+    + function definitons
+    + basic types
+    + structs + debug macro
+    + (impl)
+  - Development infrastructure: cargo, vscode, playground
+  - Naming and coding conventions
+  - Repo
+  - Approx 15 slides, 30 minutes
+* Practice 1: ownership, borrowing, mutability
+  - Approx 30 minutes (thereof 10 minutes for presenting the sample solution)
+  - Small library for 2D vectors
+* Break: 10 minutes
+* Lecture 2: high-level language constructs
+  - Enums: Option and Result
+  - Error handling
+  - Closures
+  - Iterators, for-loops
+  - Slices: Vec and &[], String and &str
+  - String formatting
+  - Approx 10 slides, 20 minutes
+* Practice 2
+  - Approx 30 minutes
+* Break: 10 minutes
+* Lecture 3: advanced concepts
+  - Lifetimes
+  - unsafe code
+  - Box, Rc etc.
+  - Traits, generics, macros, modules (only short)
+  - Approx 20 minutes
+* Practice 3
+  - Approx 20 minutes
+  - Simple stack
+* Wrap up
+  - Summary
+  - Resources
+  - learning curve
+  - Approx 5 minutes
+* Project suggestion: UTF-16 library
