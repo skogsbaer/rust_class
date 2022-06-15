@@ -1,0 +1,1 @@
+# rust_class_ew2022
