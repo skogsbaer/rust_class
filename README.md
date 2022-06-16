@@ -16,3 +16,4 @@ laptop:
 * Extension
   [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
   for Visual Studio Code, do **not** install the *Rust* extension.
+* For debugging: extension [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)

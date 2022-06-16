@@ -24,7 +24,7 @@
   - Iterators, for-loops
   - Slices: Vec and &[], String and &str
   - String formatting
-  - Approx 10 slides, 20 minutes
+  - Approx 13 slides, 30 minutes
 * Practice 2
   - Approx 30 minutes
 * Break: 10 minutes
@@ -32,10 +32,9 @@
   - Lifetimes
   - unsafe code
   - Box, Rc etc.
-  - Traits, generics, macros, modules (only short)
-  - Approx 20 minutes
+  - Approx 15 minutes
 * Practice 3
-  - Approx 20 minutes
+  - Approx 15 minutes
   - Simple stack
 * Wrap up
   - Summary
