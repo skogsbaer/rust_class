@@ -5,3 +5,14 @@ This repository hosts the materials for a class entitled
 delivered at [embedded world 2022](https://www.embedded-world.de)
 
 Currently, the material is still being worked on.
+
+## Preparations:
+
+Before the class, you should install the following software on your
+laptop:
+
+* [Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+* [Visual Studio Code](https://code.visualstudio.com)
+* Extension
+  [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+  for Visual Studio Code, do **not** install the *Rust* extension.
