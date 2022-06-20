@@ -1,6 +1,6 @@
 # Rust Class, Practice Session 2
 
-This practice session deals with the `Option` and the `Result` type,
+This practice session deals with the `Option` and the `Result` types,
 with pattern matching, error handling, strings, slices, iteration,
 and closures.
 
@@ -24,7 +24,7 @@ Use a `for`-loop to iterate over the vector of persons.
 
 Program a variant `lookup_person2` of the function from exercise 1, with the same signature.
 This time, you should use the `iter()` method of a vector to get an iterator. Iterator
-then has a `filter` method, which you need to pass a closure matching the person
+has a `filter` method, which you need to pass a closure matching the person
 you want to find.
 
 ## Exercise 3

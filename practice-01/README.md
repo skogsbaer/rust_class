@@ -1,6 +1,6 @@
 # Rust Class, Practice Session 1
 
-This practice session deals with basic rust feathres (variables,
+This practice session deals with basic rust features (variables,
 functions, ...), as well as with ownership, borrowing, and mutability.
 
 Use `cargo run` to run the main function, `cargo test` executes the tests.
@@ -117,7 +117,7 @@ now activate it.
 ## Exercise 6
 
 Write a function `move_mut` that takes a point `p`, an `x`-value, and a
-`y`-value. The function then moves point `p` in-place. The test for `move_mut` is commented out, you should now activate it.
+`y`-value. The function moves point `p` in-place. The test for `move_mut` is commented out, you should now activate it.
 
 ## Exercise 7
 

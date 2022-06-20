@@ -1,10 +1,11 @@
+// Declare
 #[derive(Debug, PartialEq)]
 pub struct Point2D {
     x: i32,
     y: i32
 }
 
-// pub fn new(x: i32, y: i32) -> Point2D {}
+// pub fn new(x: i32, y: i32) -> Point2D { }
 
 /*
 pub fn problem1() {

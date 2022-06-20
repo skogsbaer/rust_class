@@ -184,4 +184,6 @@ fn main() {
     //start_tcp_server_1();
     //play_with_strings();
     play_with_vectors();
+    let v = vec![1,2,3];
+    print_all(v.iter());
 }

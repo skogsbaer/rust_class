@@ -4,9 +4,7 @@ This repository hosts the materials for a class entitled
 *Rust, a Safe Language for Low-level Programming*,
 delivered at [embedded world 2022](https://www.embedded-world.de)
 
-Currently, the material is still being worked on.
-
-## Preparations:
+## Preparations
 
 Before the class, you should install the following software on your
 laptop:
@@ -17,3 +15,10 @@ laptop:
   [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
   for Visual Studio Code, do **not** install the *Rust* extension.
 * For debugging: extension [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
+
+## Material
+
+* [Slides](rust_class_ew2022.pdf) ([step-by-step](rust_class_ew2022_animations.pdf))
+* [Practice session 1](practice-01) ([solution](practice-01-solution))
+* [Practice session 2](practice-02) ([solution](practice-02-solution))
+* [Practice session 3](practice-03) ([solution](practice-03-solution))

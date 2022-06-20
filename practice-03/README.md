@@ -24,7 +24,7 @@ run it.
 ## Exercise 3
 
 Add iterator support for the stack datastructure. The `iter` method returns
-a value of type `Iter<'a, T>`, where `'a` is the lifetime of the whole stac
+a value of type `Iter<'a, T>`, where `'a` is the lifetime of the whole stack
 and `T` is the type of the stack elements. The `Iter` type should then
 implement the `Iterator` trait. Every type that implements `Iterator`
 supports iteration via the `for`-loop.
