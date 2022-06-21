@@ -15,6 +15,7 @@ laptop:
   [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
   for Visual Studio Code, do **not** install the *Rust* extension.
 * For debugging: extension [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
+* Clone this repository and do Exercise 0 of [practice session 1](practice-01)
 
 ## Material
 
@@ -22,3 +23,7 @@ laptop:
 * [Practice session 1](practice-01) ([solution](practice-01-solution))
 * [Practice session 2](practice-02) ([solution](practice-02-solution))
 * [Practice session 3](practice-03) ([solution](practice-03-solution))
+
+## Bugs and Errors
+
+If you find bugs or errors, please open an issue or a pull request.
