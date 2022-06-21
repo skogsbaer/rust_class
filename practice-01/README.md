@@ -154,7 +154,7 @@ impl Point2D {
     }
 
     pub fn print(&self) {
-        println!("point: {:?}", p);
+        println!("point: {:?}", self);
     }
 
     // ...
