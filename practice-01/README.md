@@ -18,7 +18,7 @@ in your shell. (The `$` at the start of the line is a shell prompt). You
 should see an output like this:
 
 ```
-   Compiling practice-01 v0.1.0 (/Users/swehr/repos/rust_class_ew2022/practice-01)
+   Compiling practice-01 v0.1.0 (/Users/swehr/repos/rust_class/practice-01)
     Finished dev [unoptimized + debuginfo] target(s) in 0.27s
      Running `target/debug/practice-01`
 Hello, world!
@@ -59,7 +59,7 @@ You should now be able to remove the comments from the last two lines
 of the `main` function. Executing `cargo run` gives
 
 ```
-   Compiling practice-01-solution v0.1.0 (/Users/swehr/repos/rust_class_ew2022/practice-01-solution)
+   Compiling practice-01-solution v0.1.0 (/Users/swehr/repos/rust_class/practice-01-solution)
     Finished dev [unoptimized + debuginfo] target(s) in 0.27s
      Running `target/debug/practice-01-solution`
 Hello, world!

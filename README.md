@@ -19,7 +19,7 @@ laptop:
 
 ## Material
 
-* [Slides](rust_class_ew2022.pdf) ([step-by-step](rust_class_ew2022_animations.pdf))
+* [Slides](rust_class.pdf) ([step-by-step](rust_class_animations.pdf))
 * [Practice session 1](practice-01) ([solution](practice-01-solution))
 * [Practice session 2](practice-02) ([solution](practice-02-solution))
 * [Practice session 3](practice-03) ([solution](practice-03-solution))
