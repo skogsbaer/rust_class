@@ -7,8 +7,11 @@ Use `cargo run` to run the main function, `cargo test` executes the tests.
 
 ## Exercise 0
 
-Make sure that your setup is working. Go inside the `practice-01`
-directory. Run the program for this exercise by executing
+Make sure that your setup is working. Open the `practice-01` folder with
+Visual Studio Code. Go to the terminal inside Visual Studio Code,
+or use any other terminal with `practice-01` as its working directory.
+
+Run the program for this exercise by executing
 
 ```
 $ cargo run

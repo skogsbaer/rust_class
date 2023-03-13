@@ -43,7 +43,7 @@ fn main() {
 }
 
 pub struct Iter<'a, T> {
-    next: Option<&'a Node<T>>,
+    cur: Option<&'a Node<T>>,
 }
 
 impl<'a, T> Iterator for Iter<'a, T> {

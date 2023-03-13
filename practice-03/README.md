@@ -14,7 +14,9 @@ File `main.rs` defines the layout, method signatures, and tests for our
 generic stack datastructure.
 
 Implement the methods `new`, `push`, and `pop`. Then you should be able
-to run the first test using `cargo test`.
+to run the first test using `cargo test`. (You might
+get a warning because of unused code, but that's ok
+for now.)
 
 ## Exercise 2
 

@@ -46,7 +46,7 @@ impl<T> Stack<T> {
     }
 
     pub fn iter<'a>(&'a self) -> Iter<'a, T> {
-        Iter { next: self.head.as_deref() }
+        Iter { cur: self.head.as_deref() }
     }
 }
 
@@ -55,14 +55,14 @@ fn main() {
 }
 
 pub struct Iter<'a, T> {
-    next: Option<&'a Node<T>>,
+    cur: Option<&'a Node<T>>,
 }
 
 impl<'a, T> Iterator for Iter<'a, T> {
     type Item = &'a T;
     fn next(&mut self) -> Option<Self::Item> {
-        self.next.map(|node| {
-            self.next = node.next.as_deref();
+        self.cur.map(|node| {
+            self.cur = node.next.as_deref();
             &node.elem
         })
     }
