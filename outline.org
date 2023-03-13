@@ -14,7 +14,7 @@
   - Repo
   - Approx 15 slides, 30 minutes
 * Practice 1: ownership, borrowing, mutability
-  - Approx 30 minutes (thereof 10 minutes for presenting the sample solution)
+  - Approx 30 minutes + 10 minutes for presenting the sample solution
   - Small library for 2D vectors
 * Break: 10 minutes
 * Lecture 2: high-level language constructs
