@@ -10,6 +10,7 @@ Before the class, you should install the following software on your
 laptop:
 
 * [Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html)
+  * [Detailed instructions](https://doc.rust-lang.org/stable/book/ch01-01-installation.html#installing-rustup-on-windows) for installation under windws
 * [Visual Studio Code](https://code.visualstudio.com)
 * Extension
   [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
