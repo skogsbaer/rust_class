@@ -2,7 +2,7 @@
 
 This repository hosts the materials for a class entitled
 *Rust, a Safe Language for Low-level Programming*,
-delivered at [embedded world 2022/2023/2024](https://www.embedded-world.de)
+delivered at [embedded world 2022/2023/2024/2025](https://www.embedded-world.de)
 
 ## Preparations
 
@@ -17,6 +17,10 @@ laptop:
   for Visual Studio Code, do **not** install the *Rust* extension.
 * For debugging: extension [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
 * Clone this repository and do Exercise 0 of [practice session 1](practice-01)
+
+Tested with
+
+* 2025-03-06: cargo 1.68.0 and cargo 1.85.0
 
 ## Material
 
