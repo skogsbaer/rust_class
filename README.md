@@ -2,7 +2,7 @@
 
 This repository hosts the materials for a class entitled
 *Rust, a Safe Language for Low-level Programming*,
-delivered at [embedded world 2022/2023/2024/2025](https://www.embedded-world.de)
+delivered at [embedded world 2022/2023/2024/2025/2026](https://www.embedded-world.de)
 
 ## Preparations
 
@@ -21,6 +21,7 @@ Then clone this repository and do Exercise 0 of [practice session 1](practice-01
 
 Tested with
 
+* 2026-03-05: cargo 1.93.1
 * 2025-03-06: cargo 1.68.0 and cargo 1.85.0
 
 ## Material
