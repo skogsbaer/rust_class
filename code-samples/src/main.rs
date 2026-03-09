@@ -9,17 +9,19 @@ use rayon::*; // for async
 fn sample1() {
     let mut v = vec![10, 11];
     let vptr = &v[1];      // Alias, points into v
-    v.push(12);            // Mutate the vector
-    //println!("{}", *vptr); // Compile error
+    //v.push(12);            // Mutate the vector
+    println!("{}", vptr); // Compile error
 }
 
 fn consume(w: Vec<i32>) {
+    println!("w addr {:p}", &w);
     println!("Length of vector: {}", w.len());
     // Memory of w is released automatically
 }
 
 fn sample2() {
     let mut v = vec![10, 11];
+    println!("v addr {:p}", &v);
     consume(v); // Transfers ownership (call by value)
     //v.push(12); // Compile error
 }
@@ -180,10 +182,124 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     if x.len() > y.len() { x } else { y }
 }
 
+use std::mem;
+
+// This function borrows a slice.
+fn analyze_slice(slice: &[i32]) {
+    println!("First element of the slice: {}", slice[0]);
+    println!("The slice has {} elements", slice.len());
+}
+
+fn nested_array_samples() {
+    let matrix: [[i32; 3]; 2] = [[1,2,3],[4,5,6]];
+    analyze_slice(&matrix[0]);
+    analyze_slice(&matrix[1]);
+}
+
+fn array_samples() {
+    // Fixed-size array (type signature is optional).
+    let xs: [i32; 5] = [1, 2, 3, 4, 5];
+
+    // All elements can be initialized to the same value.
+    let ys: [i32; 500] = [0; 500];
+
+    // Indexing starts at 0.
+    println!("First element of the array: {}", xs[0]);
+    println!("Second element of the array: {}", xs[1]);
+
+    // `len` returns the count of elements in the array.
+    println!("Number of elements in array: {}", xs.len());
+
+    // Arrays are stack allocated.
+    println!("Array xs occupies {} bytes", mem::size_of_val(&xs));
+    println!("Array ys occupies {} bytes", mem::size_of_val(&ys));
+
+    // Arrays can be automatically borrowed as slices.
+    println!("Borrow the whole array as a slice.");
+    analyze_slice(&xs);
+
+    // Slices can point to a section of an array.
+    // They are of the form [starting_index..ending_index].
+    // `starting_index` is the first position in the slice.
+    // `ending_index` is one more than the last position in the slice.
+    println!("Borrow a section of the array as a slice.");
+    analyze_slice(&ys[1 .. 4]);
+
+    let xs_slice: &[i32] = &xs;
+    let ys_slice: &[i32] = &ys[1 .. 4];
+    // Example of empty slice `&[]`:
+    let empty_array: [u32; 0] = [];
+    assert_eq!(&empty_array, &[]);
+    assert_eq!(&empty_array, &[][..]); // Same but more verbose
+
+    // Arrays can be safely accessed using `.get`, which returns an
+    // `Option`. This can be matched as shown below, or used with
+    // `.expect()` if you would like the program to exit with a nice
+    // message instead of happily continue.
+    for i in 0..xs.len() + 1 { // Oops, one element too far!
+        match xs.get(i) {
+            Some(xval) => println!("{}: {}", i, xval),
+            None => println!("Slow down! {} is too far!", i),
+        }
+    }
+
+    // Out of bound indexing on array with constant value causes compile time error.
+    //println!("{}", xs[5]);
+    // Out of bound indexing on slice causes runtime error.
+    //println!("{}", xs[..][5]);
+}
+
+fn vector_samples() {
+    // Vectors
+    let mut v1: Vec<i32> = vec![1, 2, 3, 4, 5];
+    let mut v2: Vec<i32> = vec![42; 500];
+
+    // Vectors can grow or shrink
+    v1.push(6);
+    v2.push(1);
+
+    // Vectors are heap allocated.
+    println!("Vector v1 occupies {} bytes", mem::size_of_val(&v1));
+    println!("Vector v2 occupies {} bytes", mem::size_of_val(&v2));
+
+    println!("Borrow whole vector as a slice.");
+    analyze_slice(&v1);
+
+    println!("Borrow a section of vector as a slice.");
+    analyze_slice(&v2[3..6]);
+
+    let v1_slice: &[i32] = &v1;
+    let v2_slice: &[i32] = &v2[1 .. 4];
+    analyze_slice(v1_slice);
+    analyze_slice(v2_slice);
+}
+
+macro_rules! print_result {
+    // This macro takes an expression of type `expr` and prints
+    // it as a string along with its result.
+    // The `expr` designator is used for expressions.
+    ($expression:expr) => {
+        // `stringify!` will convert the expression *as it is* into a string.
+        println!("{:?} = {:?}",
+                 stringify!($expression),
+                 $expression);
+    };
+}
+
+fn macro_samples() {
+    print_result!(1 + 2);
+}
+
 fn main() {
     //start_tcp_server_1();
     //play_with_strings();
-    play_with_vectors();
-    let v = vec![1,2,3];
-    print_all(v.iter());
+    //play_with_vectors();
+    //let v = vec![1,2,3];
+    //print_all(v.iter());
+    //sample2();
+    //sample1();
+    array_samples();
+    vector_samples();
+    //nested_array_samples();
+    //macro_samples();
 }
