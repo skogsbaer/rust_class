@@ -46,6 +46,26 @@ pub fn lookup_last_name(persons: &[Person], id: i32) -> Option<&str> {
     // If you don't get this right now: nevermind!
 }
 
+// Here are alternatives for lookup_last_name
+pub fn lookup_last_name2(persons: &[Person], id: i32) -> Option<&str> {
+    // As in `lookup_last_name`, `p.last_name` has type String, so `&p.last_name` has type
+    // `&String`. The `as_str` method converts from `&String` to `&str`.
+    lookup_person(persons, id).map(|p| (&p.last_name).as_str())
+}
+
+// Variant of `lookup_last_name2` with an intermediate variable.
+pub fn lookup_last_name3(persons: &[Person], id: i32) -> Option<&str> {
+    lookup_person(persons, id).map(|p| {
+        let x: &String = &p.last_name;
+        x.as_str()
+    })
+}
+
+// One more variant
+pub fn lookup_last_name4(persons: &[Person], id: i32) -> Option<&str> {
+    Some(&lookup_person(persons, id)?.last_name)
+}
+
 pub fn read_file(path: &str) -> Result<String, io::Error> {
     let file_or_err = File::open(path);
     let mut f = match file_or_err {

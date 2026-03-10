@@ -51,7 +51,7 @@ pub fn lookup_last_name(persons: &[Person], id: i32) -> Option<&str>
 Again, invoke `lookup_person` for your solution. But this time, use the `map` method
 of the `Option` type to convert the resulting value of type `Option<&Person>`
 into a value of type `Option<&str>`. Getting the conversion right is slightly tricky
-and requires the dereference operator `*`.
+and potentially requires the dereference operator `*` or the `as_str` method.
 
 ## Exercise 5
 
